@@ -1,8 +1,5 @@
 import React from 'react';
 export default class Comment extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     formatDate(date) {
         return date.toLocaleDateString();
@@ -10,7 +7,7 @@ export default class Comment extends React.Component {
 
     avatar(avatarUrl) {
         return (
-            <img className="Avatar" src={avatarUrl}/>
+            <img className="Avatar" src={avatarUrl} alt='test'/>
         );
     }
 
