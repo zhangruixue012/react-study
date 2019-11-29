@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Clock from './components/Clock';
+import Mailbox from './components/MailBox.jsx';
 import * as serviceWorker from './serviceWorker';
 
 /*const comment = {
@@ -13,13 +13,19 @@ import * as serviceWorker from './serviceWorker';
     },
 };*/
 
-function tick() {
+/*function tick() {
     ReactDOM.render(
-        <Clock />,
+        <Toggle />,
         document.getElementById('root')
     );
-}
+}*/
 
-setInterval(tick, 1000);
+const messages = ['React', 'Re: React', 'Re:Re: React'];
+ReactDOM.render(
+    <Mailbox unreadMessages={messages} />,
+    document.getElementById('root')
+);
+
+// setInterval(tick, 1000);
 
 serviceWorker.unregister();
