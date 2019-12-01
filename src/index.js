@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Mailbox from './components/MailBox.jsx';
+import Calculator from './components/thermometer/Calculator';
 import * as serviceWorker from './serviceWorker';
 
 /*const comment = {
@@ -20,9 +20,9 @@ import * as serviceWorker from './serviceWorker';
     );
 }*/
 
-const messages = ['React', 'Re: React', 'Re:Re: React'];
+// const messages = ['React', 'Re: React', 'Re:Re: React'];
 ReactDOM.render(
-    <Mailbox unreadMessages={messages} />,
+    <Calculator/>,
     document.getElementById('root')
 );
 
