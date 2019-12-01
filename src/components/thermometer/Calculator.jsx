@@ -12,7 +12,7 @@ export default class Calculator extends React.Component {
     }
 
     render() {
-        const temperature = this.state.temperature;
+        // const temperature = this.state.temperature;
         return(
             <div>
                 <TemperatureInput scale='c' />
