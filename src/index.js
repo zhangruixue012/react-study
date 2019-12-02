@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Calculator from './components/thermometer/Calculator';
+import SignUpDialog from './components/combination-class/SignUpDialog';
 import * as serviceWorker from './serviceWorker';
 
 /*const comment = {
@@ -22,7 +22,7 @@ import * as serviceWorker from './serviceWorker';
 
 // const messages = ['React', 'Re: React', 'Re:Re: React'];
 ReactDOM.render(
-    <Calculator/>,
+    <SignUpDialog />,
     document.getElementById('root')
 );
 
