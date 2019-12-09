@@ -8,7 +8,7 @@ export default class Dialog extends React.Component {
                 <h1 className="Dialog-title">
                     {this.props.title}
                 </h1>
-                <p className="Dialog-message">
+                <p className='Dialog-message'>
                     {this.props.message}
                 </p>
             </FancyBorder>

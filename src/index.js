@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import SignUpDialog from './components/combination-class/SignUpDialog';
+// import WelcomeDialog from './components/combination-class/SignUpDialog';
 import * as serviceWorker from './serviceWorker';
+import Draggable from './components/draggable'
+
 
 /*const comment = {
     date: new Date(),
@@ -22,7 +24,7 @@ import * as serviceWorker from './serviceWorker';
 
 // const messages = ['React', 'Re: React', 'Re:Re: React'];
 ReactDOM.render(
-    <SignUpDialog />,
+    <Draggable />,
     document.getElementById('root')
 );
 
