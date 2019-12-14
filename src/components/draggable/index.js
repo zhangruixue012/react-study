@@ -85,6 +85,7 @@ export default class Draggable extends React.Component {
     render() {
         let { tasks, activeId } = this.state;
         let { onDragStart, cancelSelect } = this;
+        console.log(Object.keys(STATUS_CODE));
         return (
             <div className="task-wrapper">
                 {

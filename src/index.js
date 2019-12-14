@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import WelcomeDialog from './components/combination-class/SignUpDialog';
 import * as serviceWorker from './serviceWorker';
-import Draggable from './components/draggable'
-
+// import Draggable from './components/draggable'
+import TestForm from './components/cloud-react/TestForm'
 
 /*const comment = {
     date: new Date(),
@@ -24,7 +24,7 @@ import Draggable from './components/draggable'
 
 // const messages = ['React', 'Re: React', 'Re:Re: React'];
 ReactDOM.render(
-    <Draggable />,
+    <TestForm />,
     document.getElementById('root')
 );
 

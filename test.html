@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            padding: 20px;
+        }
+        h4 {
+            margin-bottom: 10px;
+        }
+        ul {
+            margin: 0 0 40px 0;
+            padding: 0 0 0 20px;
+        }
+
+        td, .col {
+            background: lightBlue;
+            padding: 10px 20px;
+            border: 1px solid white;
+            border-width: 0 0 1px 1px;
+            white-space: nowrap;
+        }
+        td:first-child, .col:first-child {
+            background: lightGreen;
+            border-width: 0 0 1px 0;
+        }
+        td:not(:first-child), .col:not(:first-child) {
+            width: 100%;
+        }
+        .flex-grid {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+        }
+        .flex-grid .col:not(:first-child) {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+        .div-table {
+            display: table;
+        }
+        .div-table .flex-grid {
+            display: table-row;
+        }
+        .div-table .flex-grid .col {
+            display: table-cell;
+        }
+    </style>
+</head>
+<body>
+
+<h4>Flexbox Grid</h4>
+<div class="flex-grid">
+    <div class="col">This</div>
+    <div class="col">This little piggy had roast beef.</div>
+</div>
+<div class="flex-grid">
+    <div class="col">This little</div>
+    <div class="col">This little piggy had roast beef.</div>
+</div>
+<div class="flex-grid">
+    <div class="col">This little piggy</div>
+    <div class="col">This little piggy had roast beef.</div>
+    <div class="col">This little piggy had roast beef.</div>
+</div>
+
+
+
+<div class="container">
+    <h4>old school table</h4>
+    <table cellspacing="0" cellpadding="0">
+        <tr>
+            <td>This</td>
+            <td colspan="2">This little piggy had roast beef.</td>
+        </tr>
+        <tr>
+            <td>This little</td>
+            <td colspan="2">This little piggy had roast beef.</td>
+        </tr>
+        <tr>
+            <td>This little piggy</td>
+            <td>This little piggy had roast beef.</td>
+            <td>This little piggy had roast beef.</td>
+        </tr>
+    </table>
+</div>
+
+<div class="container">
+    <h4>div-table</h4>
+    <div class="div-table">
+        <div class="flex-grid">
+            <div class="col">This</div>
+            <div class="col" colspan="2">This little piggy had roast beef.</div>
+        </div>
+        <div class="flex-grid">
+            <div class="col">This little</div>
+            <div class="col">This little piggy had roast beef.</div>
+        </div>
+        <div class="flex-grid">
+            <div class="col">This little piggy</div>
+            <div class="col">This little piggy had roast beef.</div>
+            <div class="col">This little piggy had roast beef.</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
